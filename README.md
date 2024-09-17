@@ -42,5 +42,6 @@ yes this is a finite set
 
 
 Question: What benefit does mutation testing offer over other testing methods discussed in class?
+
 Assume the current version of the code is “correct,” and then seed faults into that code base and re-run the test suite. A good test suite will now have at least one test case fail for such a seeded fault. Otherwise, it didn’t do a good enough job of testing the code.
 [Dr.Kinga Dobolyi Software Engineering Notes]https://cs2113-f24.github.io/j/software_testing
