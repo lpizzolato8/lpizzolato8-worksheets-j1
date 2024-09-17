@@ -19,23 +19,27 @@ Question: What are the input domain paritions for this exercise?
 
 Question: Complete truth table for the following function
 if ( ( (a > b) or G ) and (x < y) )
+- CompA: a>b
+- CompB: G
+- CompC: x<y
+- CompD: a>b||G
+- CompE: (a>b||G)&&(x<y)
 
-| a | b | a>b | x | y |
-|---|---|---|---|---|
-| T |   |   |   |   |
-| T |   |   |   |   |
-| T |   |   |   |   |
-| T |   |   |   |   |
-| F |   |   |   |   |
-| F |   |   |   |   |
-| F |   |   |   |   |
-| F |   |   |   |   |
+| CompA | CompB | CompC | CompD | CompE |
+|-------|-------|-------|-------|-------|
+|   F   |   F   |   F   |   F   |   F   |
+|   F   |   F   |   T   |   F   |   F   |
+|   F   |   T   |   F   |   T   |   F   |
+|   F   |   F   |   T   |   T   |   T   |
+|   F   |   F   |   F   |   T   |   F   |
 
 Consider the control flow graph below. What are all the paths (using node numbers) that would achieve full path coverage as a test criteria? Is this a finite set?
 ```ruby
 12567,1257,13567,1357,134357,1343567
 yes this is a finite set
-``` 
+```
+
+
 
 Question: What benefit does mutation testing offer over other testing methods discussed in class?
 Assume the current version of the code is “correct,” and then seed faults into that code base and re-run the test suite. A good test suite will now have at least one test case fail for such a seeded fault. Otherwise, it didn’t do a good enough job of testing the code.
