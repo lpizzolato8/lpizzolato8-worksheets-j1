@@ -12,10 +12,12 @@ Question: What are three benefits of Test Driven Development (TDD)?
 * Writing tests helps you think about the requirements of your system
 
 Question: What are the input domain paritions for this exercise?
-*  Only letters, numbers, and a single underscore
-*  There must not be an @ symbol or anything that resembles an email address
-*  At least 1 number, 1 lowercase, and 1 uppercase
-*  At least 4 "characters" including the underscore
+* At least 4 "characters" including the underscore
+  * At least 1 number, 1 lowercase, and 1 uppercase
+    * Only letters, numbers, and a single underscore
+* There must not be an @ symbol or anything that resembles an email address
+
+
 
 Question: Complete truth table for the following function
 if ( ( (a > b) or G ) and (x < y) )
